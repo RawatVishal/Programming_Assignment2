@@ -8,7 +8,7 @@ def kms_to_miles():
 
 kms_to_miles()
 
-#Q2-Write a python program to convert Celsius into Fahrenheit ?
+#Q2-Write a python program to convert Celsius into Fahrenheit
 
 def C_to_F():
     '''This function is used to convert celsius into fahrenheit'''
@@ -18,4 +18,13 @@ def C_to_F():
 
 C_to_F()
 
-#Q3-
+#Q3-Write a python program to display calendar
+
+import calendar
+year = int(input('enter the calendar year:'))
+month = int(input('enter the month of calendar:'))
+print(calendar.calendar(year))
+print(calendar.month(year,month))
+
+#Q4-
+
