@@ -26,5 +26,9 @@ month = int(input('enter the month of calendar:'))
 print(calendar.calendar(year))
 print(calendar.month(year,month))
 
-#Q4-
+#Q4-Write a python program to solve quadratic equation
+
+def roots(a,b,c):
+    '''This function is used for finding the roots of quadratic equation'''
+    
 
