@@ -28,7 +28,20 @@ print(calendar.month(year,month))
 
 #Q4-Write a python program to solve quadratic equation
 
-def roots(a,b,c):
-    '''This function is used for finding the roots of quadratic equation'''
-    
+def roots():
+    '''This function is used for finding the roots of quadratic equation in the form of ax^2+bx+c'''
+    a = int(input("enter the component of x^2 :"))
+    b = int(input("enter the component of x:"))
+    c = int(input("enter the value of c:"))
+    d = int(((b*b)-4*a*c)**(0.5))
+    root1 = (((-1)*(b))+d)/2
+    root2 = (((-1)*(b))-d)/2
+    print("The roots of the quadratic equation are",root1,root2)
+
+
+roots()
+
+#Q5-
+
+
 
