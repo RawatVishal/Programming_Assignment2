@@ -31,3 +31,30 @@ def leap_year():
 
 leap_year()
 
+#Q4-write a python program to check a prime number
+
+b = int(input("enter the number : "))
+
+if b > 1:
+    for i in range(2,int(b/2)+1):
+        if (b % i ) == 0:
+            print(b,"is not a prime number")
+            break
+    else:
+        print(b,"is a prime number")
+else:
+    print(b,"is not a prime number")
+
+#Q5-Write a program to write prime number in interval of 1,10000
+
+a = 1
+b = 10001
+for x in range(1,10001):
+    if x==1:
+        print("1 is not a prime number")
+    elif x>1:
+        for i in range(2,int(x//2)+1):
+            if (x%i==0):
+                pass
+            else:
+                print(x)
