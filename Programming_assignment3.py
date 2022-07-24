@@ -15,3 +15,19 @@ if (a/2) == 0:
     print(a,"is an even number ")
 else:
     print("It is a odd number ")
+
+#Q3-Write  a program to check leap year
+
+
+def leap_year():
+    a = int(input("Enter the year: "))
+    if (a % 400) == 0:
+        print(a, "is a leap year")
+    elif (a % 400) != 0:
+        if (a % 4 == 0) and (a % 100 != 0) :
+            print(a, "is a leap year")
+    else:
+        print("Entered year is not leap year ")
+
+leap_year()
+
