@@ -48,13 +48,19 @@ def roots(a,b,c):
             root_2 = (- b / (2 * a), ' - i', sqrt_d/(2*a))
             print("Roots are complex", root_1, root_2)
 
-roots(1,2,3)
+roots(0,2,3)
 
 
+#Q5-write a program to swap two variables without using temp
+def swap():
+     '''this function is used to swap values hold by two variables'''
+     a = input("enter the value of first variable : ")
+     b = input("enter the value of second variable : ")
+     a ,b = b ,a
+     print("value of first  and second variable after swapping" ,a,b)
 
+swap()
 
-
-#Q5-
 
 
 
