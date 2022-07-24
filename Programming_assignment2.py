@@ -27,10 +27,32 @@ print(calendar.calendar(year))
 print(calendar.month(year,month))
 
 #Q4-Write a python program to solve quadratic equation
-
-def roots():
+import math
+def roots(a,b,c):
     '''This function is used for finding the roots of quadratic equation in the form of ax^2+bx+c'''
-    
+    d = b*b-4*a*c
+    sqrt_d = math.sqrt(abs(d))
+    if a ==0:
+        print("Please enter correct quadratic equation")
+    else:
+        if d == 0:
+            root_1 = ((-1) * b) / 2
+            root_2 = ((-1) * b) / 2
+            print("roots are real and equal", root_1, root_2)
+        elif d > 0:
+            root_1 = (((-1) * b) + sqrt_d) / (2 * a)
+            root_2 = (((-1) * b) - sqrt_d) / (2 * a)
+            print("Roots are real and unequal", root_1, root_2)
+        else:
+            root_1 = (- b / (2 * a), ' + i', sqrt_d/(2*a))
+            root_2 = (- b / (2 * a), ' - i', sqrt_d/(2*a))
+            print("Roots are complex", root_1, root_2)
+
+roots(1,2,3)
+
+
+
+
 
 #Q5-
 
